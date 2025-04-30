@@ -6,15 +6,22 @@ import { use } from 'react'
 
 function App() {
 //Hooks :usestate;
-let[counter,setCounter] = useState(5)
-
+const[counter,setCounter] = useState(5)
 
 // let counter=5
 const addValue=()=>{
-  setCounter(counter+1)
+  setCounter(prevCounter =>prevCounter+1)
+  setCounter(prevCounter =>prevCounter+1)
+  setCounter(prevCounter =>prevCounter+1)
+  setCounter(prevCounter =>prevCounter+1)
+
+
 }
 const removeValue=()=>{
-  setCounter(counter-1)
+  setCounter(prevCounter=>prevCounter-1)
+  setCounter(prevCounter=>prevCounter-1)
+  setCounter(prevCounter=>prevCounter-1)
+  setCounter(prevCounter=>prevCounter-1)
   
 }
   return (
